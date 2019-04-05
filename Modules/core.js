@@ -55,7 +55,7 @@ module.exports = {
         },
         {
             name: "stats",
-            description: "Shows the bot's stats and info.",
+            description: "Shows the bot's statistics and information.",
             allowDM: true,
             aliases: ["info", "botstats", "botinfo"],
             run(msg, args) {
@@ -64,7 +64,7 @@ module.exports = {
                 let devs = devRole.members.map(m=>m.user.username + "#" + m.user.discriminator);
                 let stats = new args.embed()
                     .setColor(15113758)
-                    .setAuthor(msg.client.user.username + " Stats and Info", msg.client.user.avatarURL)
+                    .setAuthor(msg.client.user.username + " Statistics and Information", msg.client.user.avatarURL)
                     .addField("Prefix", args.prefix == args.defaultConfig.getConfig().prefix ?
                         args.prefix : `${args.prefix} (Default: **${args.defaultConfig.getConfig().prefix}**)`, true)
                     .addField("Library", `Discord.js ${args.Discord.version}`, true)
