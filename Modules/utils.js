@@ -123,7 +123,7 @@ module.exports = {
         },
         {
             name: "roleinfo",
-            description: "Gives info about a role, this command accepts IDs, names, or mentions.",
+            description: "Gives information about a role, this command accepts IDs, names, or mentions.",
             aliases: "role",
             usage: "<role>",
             run(msg, args) {
