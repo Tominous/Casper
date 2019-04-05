@@ -146,7 +146,7 @@ module.exports = {
                     if (!muteRole) {
                         if (rolePerms) {
                             makeMuteRole(msg.guild, msg.guild.member(msg.client.user), function (role) { args.setModuleConfig(args.config, "Mod", "mutedRole", role.id); });
-                            return { text: "**Created __CasperMuted__ role**. Please move the role upwards and check permissions." };
+                            return { text: "**Created __Casper Muted__ role**. Please move the role upwards and check permissions." };
                         } else {
                             return { text: "I don't have permission to create the mute role." };
                         }
